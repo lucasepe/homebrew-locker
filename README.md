@@ -1,4 +1,4 @@
-# Homebrew Formula fr [Locker](https://github.com/lucasepe/locker)
+# Homebrew Formula for [Locker](https://github.com/lucasepe/locker)
 
 ```sh
 brew tap lucasepe/locker
