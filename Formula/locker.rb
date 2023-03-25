@@ -5,20 +5,20 @@
 class Locker < Formula
   desc "Store secrets on your local file system."
   homepage "https://github.com/lucasepe/locker"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lucasepe/locker/releases/download/v0.1.0/locker_0.1.0_darwin_arm64.tar.gz"
-      sha256 "801c356298fdf71beda7545d1e522cf20bb722f4a02117df4ae9c2d9134acb5a"
+      url "https://github.com/lucasepe/locker/releases/download/v0.2.0/locker_0.2.0_darwin_arm64.tar.gz"
+      sha256 "d2d588ba3ae99c5fbdc0d6cf6671fe11dc090bc77152fecaf889b48542b81f93"
 
       def install
         bin.install "locker"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lucasepe/locker/releases/download/v0.1.0/locker_0.1.0_darwin_amd64.tar.gz"
-      sha256 "fac140a562c3a6f3ea601afc701f23a92f67bce3de61e4ca7057eeec43eb2740"
+      url "https://github.com/lucasepe/locker/releases/download/v0.2.0/locker_0.2.0_darwin_amd64.tar.gz"
+      sha256 "74914d3043d31c24eb351411e4ac166a2ababa8bbeb97ecadd369f62057393b4"
 
       def install
         bin.install "locker"
@@ -28,16 +28,16 @@ class Locker < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucasepe/locker/releases/download/v0.1.0/locker_0.1.0_linux_arm64.tar.gz"
-      sha256 "3bc7c2472e6ee96bffc6310432ce3232249e3d918e106eef53f91afe55f23629"
+      url "https://github.com/lucasepe/locker/releases/download/v0.2.0/locker_0.2.0_linux_arm64.tar.gz"
+      sha256 "0aa86407cbce7a5b7f5b93f901d998e8a62150ac3fd57b9b1bda915ab31ea6f0"
 
       def install
         bin.install "locker"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lucasepe/locker/releases/download/v0.1.0/locker_0.1.0_linux_amd64.tar.gz"
-      sha256 "c6548cbb943ecd558595283ebcee573b216e0bab426f06c30dc27247200a4608"
+      url "https://github.com/lucasepe/locker/releases/download/v0.2.0/locker_0.2.0_linux_amd64.tar.gz"
+      sha256 "99452b342f0b766a1481a7d56103f0abbf69798cbe2577f977877229e8670dba"
 
       def install
         bin.install "locker"
