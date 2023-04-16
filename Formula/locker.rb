@@ -5,20 +5,20 @@
 class Locker < Formula
   desc "Store secrets on your local file system."
   homepage "https://github.com/lucasepe/locker"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/lucasepe/locker/releases/download/v0.2.0/locker_0.2.0_darwin_arm64.tar.gz"
-      sha256 "d2d588ba3ae99c5fbdc0d6cf6671fe11dc090bc77152fecaf889b48542b81f93"
+      url "https://github.com/lucasepe/locker/releases/download/v0.3.0/locker_0.3.0_darwin_arm64.tar.gz"
+      sha256 "218617254b24ee8a846f95a803b559a845715ac759fd3b590859923d119ccf30"
 
       def install
         bin.install "locker"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/lucasepe/locker/releases/download/v0.2.0/locker_0.2.0_darwin_amd64.tar.gz"
-      sha256 "74914d3043d31c24eb351411e4ac166a2ababa8bbeb97ecadd369f62057393b4"
+      url "https://github.com/lucasepe/locker/releases/download/v0.3.0/locker_0.3.0_darwin_amd64.tar.gz"
+      sha256 "fe15d27eb57f2fad460996b082c551839d6918072ccc880cdd6f6a8b443968dc"
 
       def install
         bin.install "locker"
@@ -27,17 +27,17 @@ class Locker < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lucasepe/locker/releases/download/v0.2.0/locker_0.2.0_linux_arm64.tar.gz"
-      sha256 "0aa86407cbce7a5b7f5b93f901d998e8a62150ac3fd57b9b1bda915ab31ea6f0"
+    if Hardware::CPU.intel?
+      url "https://github.com/lucasepe/locker/releases/download/v0.3.0/locker_0.3.0_linux_amd64.tar.gz"
+      sha256 "33a2f60bb0be389e5651f24f462d44c558452fc42f0886de6302e0355b0f796d"
 
       def install
         bin.install "locker"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/lucasepe/locker/releases/download/v0.2.0/locker_0.2.0_linux_amd64.tar.gz"
-      sha256 "99452b342f0b766a1481a7d56103f0abbf69798cbe2577f977877229e8670dba"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/lucasepe/locker/releases/download/v0.3.0/locker_0.3.0_linux_arm64.tar.gz"
+      sha256 "1ae2c52ba73a051383a7159b6d8671f06e5fd444f5056c92d623020fcdbaec53"
 
       def install
         bin.install "locker"
